@@ -1,18 +1,15 @@
-'use client'; 
-import Image from "next/image";
-import HeroSection from "@/components/heroSection";
-import Aboutus from "@/components/aboutUs";
+import HeroSection from "@/components/home/heroSection";
+import Aboutus from "@/components/home/aboutUs";
 
-import SolutionsSlider from "@/components/SolutionsSlider";
-import CallToAction from "@/components/CallToAction";
-import ProcessFlow from "@/components/ProcessFlow";
-import ServicesSection from "@/components/ServicesSection";
-import Testimonials from "@/components/Testimonial";
-import { useSectionScrollAnimation } from '@/components/useSectionScrollAnimation';
+import SolutionsSlider from "@/components/home/SolutionsSlider";
+import CallToAction from "@/components/home/CallToAction";
+import ProcessFlow from "@/components/home/ProcessFlow";
+import ServicesSection from "@/components/home/ServicesSection";
+import Testimonials from "@/components/home/Testimonial";
+import CtaSection from "@/components/home/CtaSection";
 
 
 export default function Home() {
-  useSectionScrollAnimation('section');
   return (
     <>
     <HeroSection />
@@ -22,6 +19,8 @@ export default function Home() {
     <ServicesSection />
     <Testimonials />
     <ProcessFlow />
+    <CtaSection />
+
     </>
   );
 }
