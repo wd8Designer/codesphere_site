@@ -66,7 +66,7 @@ const ContactSection = () => {
           className="text-4xl md:text-5xl font-bold text-white mb-6"
           variants={itemVariants}
         >
-          Let's Talk About Your Next Project
+          Let&apos;s Talk About Your Next Project
         </h2>
 
         <p
