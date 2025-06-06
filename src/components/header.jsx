@@ -1,6 +1,9 @@
 'use client'
 import Link from 'next/link'
+import Image from 'next/image'
+import Logo from '../../public/logo.png'
 import { useState } from 'react'
+
 
 const Navbar = () => {
   const [navIsOpened, setNavIsOpened] = useState(false)
@@ -11,15 +14,11 @@ const Navbar = () => {
     <>
       <div aria-hidden={true} onClick={closeNavbar} className={`fixed bg-gray-800/40 inset-0 z-30 ${navIsOpened ? "lg:hidden" : "hidden lg:hidden"}`}
       ></div>
-      <header className="sticky top-0 w-full flex items-center h-20 border-b border-b-[#714B67]  z-40 bg-white/50  backdrop-filter backdrop-blur-lg">
+      <header className="sticky top-[30px] w-full flex items-center h-20 border-b border-b-[#714B67] lg:rounded-full shadow-2xl mx-auto  z-40 bg-white/50  backdrop-filter backdrop-blur-lg lg:max-w-[60vw]">
         <nav className="relative mx-auto  w-full px-5 sm:px-10 md:px-12 lg:px-5 flex gap-x-5 justify-between items-center">
           <div className="flex items-center min-w-max">
             <Link href="/" className="relative flex items-center gap-2.5">
-              <span className="flex">
-                <span className="w-3 h-6  bg-[#017E84]" />
-                <span className="w-3 h-6  bg-[#714B67] mt-2" />
-              </span>
-              <span className="text-lg font-bold text-[#714B67]"  > Codesphere</span>
+              <Image src={Logo} alt="logo" className="w-auto h-[85px]" />
             </Link>
           </div>
 
