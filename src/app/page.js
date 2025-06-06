@@ -6,7 +6,6 @@ import CallToAction from "@/components/home/CallToAction";
 import ProcessFlow from "@/components/home/ProcessFlow";
 import ServicesSection from "@/components/home/ServicesSection";
 import Testimonials from "@/components/home/Testimonial";
-import CtaSection from "@/components/home/CtaSection";
 
 
 export default function Home() {
@@ -19,7 +18,6 @@ export default function Home() {
     <ServicesSection />
     <Testimonials />
     <ProcessFlow />
-    <CtaSection />
 
     </>
   );
