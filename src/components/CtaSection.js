@@ -58,7 +58,7 @@ const ContactSection = () => {
           variants={iconVariants}
         >
           <div className="w-16 h-16 mx-auto bg-transparent flex items-center justify-center">
-            <img src='/icon-handshake.svg' alt="Handshake" />
+            
           </div>
         </div>
 
